@@ -1,0 +1,17 @@
+<module>
+  <inherits name="ru.finam.slf4jgwt.logging.impl.LoggingImpl"/>
+  <inherits name="com.google.gwt.logging.Logging"/>
+
+  <source path=""/>
+
+  <replace-with class="org.slf4j.helpers.NOPLoggerFactory">
+    <when-type-is class="org.slf4j.ILoggerFactory"/>
+  </replace-with>
+
+  <replace-with class="ru.finam.slf4jgwt.logging.gwt.GWTLoggerFactory">
+    <when-type-is class="org.slf4j.ILoggerFactory"/>
+    <none>
+      <when-property-is name="gwt.logging.enabled" value="FALSE"/>
+    </none>
+  </replace-with>
+</module>
