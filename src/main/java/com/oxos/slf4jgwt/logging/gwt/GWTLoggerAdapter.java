@@ -1,4 +1,4 @@
-package ru.finam.slf4jgwt.logging.gwt;
+package com.oxos.slf4jgwt.logging.gwt;
 
 import org.slf4j.helpers.FormattingTuple;
 import org.slf4j.helpers.MarkerIgnoringBase;

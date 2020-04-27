@@ -1,0 +1,5 @@
+<module>
+    <inherits name="com.oxos.slf4jgwt.api.API"/>
+
+    <source path="" />
+</module>

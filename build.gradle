@@ -28,7 +28,7 @@ jar {
         attributes(
                 'Implementation-Title': project.name,
                 'Implementation-Version': project.version,
-                'Implementation-URL': 'https://github.com/FinamTrade/slf4j-gwt',
+                'Implementation-URL': 'https://github.com/gte619n/slf4j-gwt',
                 'Build-Date': new java.text.SimpleDateFormat('HH:mm:ss yyyy/MM/dd').format(new Date()),
         )
     }
@@ -42,38 +42,10 @@ jar {
 
 apply plugin: "com.greenebeans.gwt-gradle-plugin"
 
-/*
-idea {
-    project {
-        languageLevel = '1.6'
-    }
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
-}
-*/
-
-// group 'ru.finam'
-
-//compileJava.options.encoding = 'UTF-8'
-//compileTestJava.options.encoding = 'UTF-8'
-//sourceCompatibility = '1.6'
-//targetCompatibility = '1.6'
-
-// configurations { gwtCompile }
-
 dependencies {
-    // Assuming user already added gwt and slf4j libraries to his/her compile classpath.
-    // This is done to not interfere with different versions of user's gwt and slf4j libraries.
     gwt 'com.google.gwt:gwt-dev:2.8.2'
     gwt 'com.google.gwt:gwt-user:2.8.2'
-    // gwtCompile 'org.slf4j:slf4j-api:1.7.7'
     gwt 'org.slf4j:slf4j-api:1.7.30'
-}
-
-sourceSets {
-  //  main.compileClasspath += [ configurations.gwtCompile ]
 }
 
 /*
@@ -81,11 +53,11 @@ modifyPom {
     project {
         name 'slf4j-gwt'
         description 'Simple slf4j api implementation for GWT'
-        url 'https://github.com/FinamTrade/slf4j-gwt'
+        url 'https://github.com/gte619n/slf4j-gwt'
         inceptionYear '2013'
 
         scm {
-            url 'https://github.com/FinamTrade/slf4j-gwt'
+            url 'https://github.com/gte619n/slf4j-gwt'
             connection 'scm:git:https://github.com/FinamTrade/slf4j-gwt.git'
             developerConnection 'scm:git:git@github.com:FinamTrade/slf4j-gwt.git'
         }
@@ -99,16 +71,16 @@ modifyPom {
         }
 
         issueManagement {
-            url 'https://github.com/FinamTrade/slf4j-gwt/issues'
+            url 'https://github.com/gte619n/slf4j-gwt/issues'
             system 'GitHub Issues'
         }
 
         developers {
             developer {
-                id 'korzhevskiy'
-                name 'Andrei Korzhevskii'
-                email 'a.korzhevskiy@gmail.com'
-                url 'https://github.com/nordligulv'
+                id 'gte619n'
+                name 'Evan Ruff'
+                email 'evan.ruff@gmail.com'
+                url 'https://github.com/gte619n'
             }
         }
     }

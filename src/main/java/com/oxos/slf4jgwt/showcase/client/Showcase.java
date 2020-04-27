@@ -1,9 +1,9 @@
-package ru.finam.slf4jgwt.showcase.client;
+package com.oxos.slf4jgwt.showcase.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.finam.slf4jgwt.logging.util.Log;
+import com.oxos.slf4jgwt.logging.util.Log;
 
 public class Showcase implements EntryPoint {
   private final Logger logger = LoggerFactory.getLogger(Showcase.class);

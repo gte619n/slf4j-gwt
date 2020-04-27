@@ -4,9 +4,9 @@
 <module rename-to="showcase">
     <inherits name="com.google.gwt.core.Core"/>
     <inherits name="com.google.gwt.useragent.UserAgent"/>
-    <inherits name="ru.finam.slf4jgwt.logging.gwt.Logging"/>
-    <inherits name="ru.finam.slf4jgwt.logging.util.Util"/>
-    <entry-point class="ru.finam.slf4jgwt.showcase.client.Showcase"/>
+    <inherits name="com.oxos.slf4jgwt.logging.gwt.Logging"/>
+    <inherits name="com.oxos.slf4jgwt.logging.util.Util"/>
+    <entry-point class="com.oxos.slf4jgwt.showcase.client.Showcase"/>
 
     <set-configuration-property name="devModeRedirectEnabled" value="true"/>
     <set-property name="compiler.useSourceMaps" value="true" />

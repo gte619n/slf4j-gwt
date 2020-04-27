@@ -1,4 +1,4 @@
-package ru.finam.slf4jgwt.logging.util;
+package com.oxos.slf4jgwt.logging.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
